@@ -34,7 +34,7 @@ that module.
 %setup -q -n CoverageTestRunner-%{version}
 
 %build
-%{__python} setup.py build
+%py_build
 
 %if %{with tests}
 %{__make} check
@@ -42,10 +42,7 @@ that module.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%{__python} setup.py install \
-	--skip-build \
-	--optimize=2 \
-	--root=$RPM_BUILD_ROOT
+%py_install
 
 %py_postclean
 
