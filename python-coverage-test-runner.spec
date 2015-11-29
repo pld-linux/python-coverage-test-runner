@@ -14,7 +14,7 @@ Source0:	http://code.liw.fi/debian/pool/main/p/python-coverage-test-runner/%{nam
 URL:		http://liw.fi/coverage-test-runner/
 BuildRequires:	python-coverage
 BuildRequires:	rpm-pythonprov
-BuildRequires:	rpmbuild(macros) >= 1.219
+BuildRequires:	rpmbuild(macros) >= 1.710
 Requires:	python-coverage
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
