@@ -6,7 +6,7 @@
 Summary:	Python module for enforcing code coverage completeness
 Name:		python-%{module}
 Version:	1.10
-Release:	2
+Release:	3
 License:	GPL v3+
 Group:		Libraries/Python
 Source0:	http://code.liw.fi/debian/pool/main/p/python-coverage-test-runner/%{name}_%{version}.orig.tar.gz
