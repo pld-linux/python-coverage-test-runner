@@ -5,12 +5,12 @@
 %define	module coverage-test-runner
 Summary:	Python module for enforcing code coverage completeness
 Name:		python-%{module}
-Version:	1.10
-Release:	3
+Version:	1.11
+Release:	1
 License:	GPL v3+
 Group:		Libraries/Python
-Source0:	http://code.liw.fi/debian/pool/main/p/python-coverage-test-runner/%{name}_%{version}.orig.tar.gz
-# Source0-md5:	dda01699195334d151b621800eaaf064
+Source0:	http://code.liw.fi/debian/pool/main/p/python-coverage-test-runner/%{name}_%{version}.orig.tar.xz
+# Source0-md5:	74dde92363a7fcc0dabe840e9e662857
 URL:		http://liw.fi/coverage-test-runner/
 BuildRequires:	python-coverage
 BuildRequires:	rpm-pythonprov
@@ -31,7 +31,7 @@ missing parts. The unit tests for the module should test everything in
 that module.
 
 %prep
-%setup -q -n CoverageTestRunner-%{version}
+%setup -q
 
 %build
 %py_build
